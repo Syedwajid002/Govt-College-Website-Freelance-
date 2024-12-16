@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: Inter, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  color: #2c2c2a;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0; 
+  padding: 0; 
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.horizontal-line {
+  width: 50%;
+  margin: 0 auto;
+  border-top: 2px solid #000;
+}
+
+.uwanted-dots {
+  list-style-type: none;
+}
+
+.principal-card {
+  text-align: center;
+}
+
+.principal-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.Header {
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header img {
+  max-width: 100px;
+}
+
+.Navbar {
+  background-color: #444;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.Footer {
+  background-color: #555;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .Header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Navbar,
+  .Footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,128 @@
+
+  .content {
+    flex: 1;
+    padding: 20px; 
+  }
+  
+  .Header {
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .Header img {
+    max-width: 100px;
+  }
+
+  .image-container:hover img {
+    filter: blur(5px);
+  }
+
+/* For mobile devices */
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+/* For tablet devices */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .content {
+    flex-direction: row;
+  }
+}
+
+/* For desktop devices */
+@media (min-width: 1025px) {
+  .content {
+    flex-direction: row;
+  }
+}
+
+
+  .Navbar {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Footer {
+    background-color: #555;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* .react-chatbot-kit-chat-container {
+    z-index: 10 !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    right: 0 !important;
+  } */
+    @media (max-width: 768px) {
+    .Header {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    @media (min-width: 768px) {
+      .w-64 {
+        display: none;
+      }
+    }
+    
+    .Navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .Footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .content {
+      padding: 10px; 
+    }
+  }
+  
+  /* .carousel.carousel-slider {
+    overflow: inherit;
+} */
+
+.carousel .control-next.control-arrow, .carousel .control-next.control-arrow:hover{
+    background-color: transparent;
+}
+
+.carousel .control-prev.control-arrow, .carousel .control-prev.control-arrow:hover {
+    background-color: transparent;
+}
+
+/* 
+.carousel .control-next.control-arrow:before {
+    content: '';
+    border: solid #0135AD;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 14px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.carousel .control-prev.control-arrow:before {
+    content: '';
+    border: solid #0135AD;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 14px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+} */
+
+.control-next.control-arrow , .control-prev.control-arrow{
+  background-color: gray !important;
+}
